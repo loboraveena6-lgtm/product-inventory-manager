@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoStore - Sustainable Product Inventory Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🌱 EcoStore</h1>
+            <p>Sustainable Product Inventory Manager</p>
+        </header>
+
+        <section class="form-section">
+
+            <h2>Add New Product</h2>
+
+            <div class="form">
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Product Name"
+                >
+
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="Price (₹)"
+                >
+
+                <input
+                    type="number"
+                    id="productQuantity"
+                    placeholder="Quantity"
+                >
+
+                <input
+                    type="text"
+                    id="productCategory"
+                    placeholder="Category"
+                >
+
+                <button id="addButton">
+                    Add Product
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="inventory-section">
+
+            <h2>🌿 Product Inventory</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Category</th>
+                        <th>Stock Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="productTable">
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section class="summary">
+
+            <h2 id="totalValue">
+                Total Inventory Value: ₹0
+            </h2>
+
+            <p id="productCount">
+                Total Products: 0
+            </p>
+
+        </section>
+
+    </div>
+
+    <script src="dist/inventory.js"></script>
+
+</body>
+</html>
